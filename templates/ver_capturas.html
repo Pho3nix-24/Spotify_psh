@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Datos Capturados</title>
+  <div style="text-align: center; margin-bottom: 20px;">
+  <a href="{{ url_for('descargar_capturas') }}" download style="
+    background-color: #1DB954;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+  ">⬇️ Descargar</a>
+</div>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #FFFFFF;
+      padding: 40px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #191414;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    h1 {
+      color: #1DB954;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background: #282828;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 5px;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Datos Capturados</h1>
+    <form method="POST" action="{{ url_for('borrar_capturas') }}" style="text-align: center; margin-bottom: 20px;">
+  <button type="submit" style="
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  ">🗑 Borrar Capturas</button>
+</form>
+
+    <ul>
+      {% for linea in datos %}
+        <li>{{ linea }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>
