@@ -1,4 +1,4 @@
-# Proyecto de Simulación de Phishing 🎣
+# Proyecto de Simulación de Phishing 🦠
 # hecho por Alvaro L.O
 
 ## Descripción
@@ -18,5 +18,5 @@ Este proyecto simula un ataque de phishing para fines educativos. Emula una pág
 ### 1. Clona o descarga este repositorio
 
 ```bash
-git clone 
+git clone https://github.com/Pho3nix-24/Spotify_psh.git
 cd Spotify_psh
