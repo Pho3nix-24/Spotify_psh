@@ -1,0 +1,49 @@
+body {
+    background-color: #1DB954; /* Color de fondo de Spotify */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #191414; /* Color de fondo del contenido */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: #B3B3B3;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #18A046; /* Efecto hover */
+}
